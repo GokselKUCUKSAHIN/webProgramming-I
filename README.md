@@ -1,6 +1,8 @@
 # 1030522874 Göksel **KÜÇÜKŞAHİN** 👷‍♂️
 ## Web Programlama Vize Ödev Repository'si. 🌍
 
+#### Siteyi: https://gokselkucuksahin.github.io/webProgramming-I/ üzerinde gezebilirsiniz.
+
 ### 🛠 Yapılacaklar Listesi 📝
 - [x] Ödevler bireysel yapılacaktır. Grup olarak yapılamayacaktır. (10 puan)
 - [x] Her depo bir readme dosyası ile açıklamaya sahip olmalıdır. (10 puan)

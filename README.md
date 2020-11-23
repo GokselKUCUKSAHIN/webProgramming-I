@@ -1,7 +1,7 @@
-# 1030522874 Göksel KÜÇÜKŞAHİN
+# 1030522874 Göksel **KÜÇÜKŞAHİN** 👷‍♂️
+## Web Programlama Vize Ödev Repository'si. 🌍
 
-## Web Programlama Vize Ödev Repository'si. 
-
+### 🛠 Yapılacaklar Listesi 📝
 - [x] Ödevler bireysel yapılacaktır. Grup olarak yapılamayacaktır. (10 puan)
 - [x] Her depo bir readme dosyası ile açıklamaya sahip olmalıdır. (10 puan)
 - [ ] Seçeceğiniz bir web sitesinin ana sayfasının birebir kopyasını yapmanız gerekmektedir. (50 puan)

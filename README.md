@@ -9,9 +9,10 @@
 ---
 # Dosyalar
 
+
 1. [index.html](docs/index.html "main.page")
-2. style.css [/docs/assets]
-3. ...
+2. [style.css](docs/assets "css style")
+3. 
  
 
 # Kullanılan Araçlar
@@ -44,3 +45,40 @@
 - [ ] Seçeceğiniz bir web sitesinin ana sayfasının birebir kopyasını yapmanız gerekmektedir. (50 puan)
 - [ ] Github paylaşımının link adresini bu ödev sayfasına yüklemelisiniz. (10 puan)
 - [ ] Herkes yaptığı site tasarımının içine bir sayfa da hakkında/özgeçmiş sayfası koyarak kendini tanıtıp, yaptığı projelerden ve uzmanlıklarından bahsetmelidir. (10 puan)
+
+# Dev Tools
+
+``` bash
+   ______________________________
+ / \                             \.
+|   | 	                         |.
+ \_ |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |   _________________________|___
+    |  /                            /.
+    \_/____________________________/.
+```
+
+### Char Tablosu
+|chr1|chr2|
+|-|-|
+|╰|╯|
+|╭|╮|
+|└|┘|
+|├|┤|
+|┌|┐|
+|┴|┬|
+|╵|╷|
+|╶|╴|
+|│|┼|
+|─|⚙|

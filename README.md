@@ -9,8 +9,8 @@
 ---
 # Dosyalar
 
-1. index.html
-2. 
+1. [index.html](docs/index.html "main.page")
+2. style.css [/docs/assets]
 3. ...
  
 
@@ -28,7 +28,7 @@
  1. VSCode
  2. Chrome Developer Tools
  3. Sublime Text
- 4. 
+ 4. [Editor.md](https://pandao.github.io/editor.md/en.html)
 
 # Kullanılan Yöntemler
 

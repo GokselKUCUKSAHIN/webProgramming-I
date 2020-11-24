@@ -8,9 +8,12 @@
 
 ---
 # Dosyalar
+ 
+ ║\
+ ╠═\
 
 
-1. [index.html](docs/index.html "main.page")
+ [index.html](docs/index.html "main.page")
 2. [style.css](docs/assets "css style")
 3. 
  
@@ -72,13 +75,9 @@
 ### Char Tablosu
 |chr1|chr2|
 |-|-|
-|╭|╮|
-|╰|╯|
-|├|┤|
-|┌|┐|
-|└|┘|
-|┴|┬|
-|╵|╷|
-|╶|╴|
-|│|┼|
-|─|⚙|
+|╠|╣|
+|╔|╗|
+|╚|╝|
+|╩|╦|
+|║|═|
+|╬|⚙|

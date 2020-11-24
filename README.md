@@ -1,7 +1,42 @@
-# 1030522874 Göksel **KÜÇÜKŞAHİN** 👷‍♂️
-## Web Programlama Vize Ödev Repository'si. 🌍
+# www.gibson.com 🎸 sitesinin frontend birebir yeniden tasarımı 
+## BS435 Web Programlama 1 Dersi Vize Ödevi 🌍
+### Erciyes Üniversitesi Bilgisayar Mühendisliği Bölümü  
+##### Tasarlayan: **1030522874 Göksel KÜÇÜKŞAHİN 👷‍♂️**
+##### Öğretim Üyesi: Dr. Fehim KÖYLÜ
+---
+### Siteyi: https://gokselkucuksahin.github.io/webProgramming-I/ üzerinde gezebilirsiniz.
 
-#### Siteyi: https://gokselkucuksahin.github.io/webProgramming-I/ üzerinde gezebilirsiniz.
+---
+# Dosyalar
+
+1. index.html
+2. 
+3. ...
+ 
+
+# Kullanılan Araçlar
+
+ 1. HTML5
+ 2. CSS3
+ 3. Bootstrap 4
+ 4. Javascript
+ 5. jQuery
+ 6. Vue.JS
+
+# Kullanılan Yazılımlar
+
+ 1. VSCode
+ 2. Chrome Developer Tools
+ 3. Sublime Text
+ 4. 
+
+# Kullanılan Yöntemler
+
+ 1. Tasarım sistemleri
+ 2. GitHub Pages
+ 3. CI/CD
+ 4. Test otomasyonu
+ 5. Sunucusuz sistemler
 
 ### 🛠 Yapılacaklar Listesi 📝
 - [x] Ödevler bireysel yapılacaktır. Grup olarak yapılamayacaktır. (10 puan)

@@ -1,8 +1,8 @@
 # www.gibson.com 🎸 sitesinin frontend birebir yeniden tasarımı 
 ## BS435 Web Programlama 1 Dersi Vize Ödevi 🌍
 ### Erciyes Üniversitesi Bilgisayar Mühendisliği Bölümü  
-##### Tasarlayan: **1030522874 Göksel KÜÇÜKŞAHİN 👷‍♂️**
-##### Öğretim Üyesi: Dr. Fehim KÖYLÜ
+### Tasarlayan: **1030522874 Göksel KÜÇÜKŞAHİN 👷‍♂️**
+### Öğretim Üyesi: Dr. Fehim KÖYLÜ
 ---
 ### Siteyi: https://gokselkucuksahin.github.io/webProgramming-I/ üzerinde gezebilirsiniz.
 ---

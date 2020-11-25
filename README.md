@@ -73,10 +73,11 @@ _
  2. Chrome Developer Tools
  3. Sublime Text
  4. [Editor.md](https://pandao.github.io/editor.md/en.html)
- 5. [MDTreeMaker](https://github.com/GokselKUCUKSAHIN/MDFileTreeMaker) **Kendi yazdığım bir araç**
+ 5. [MDTreeMaker](https://github.com/GokselKUCUKSAHIN/MDFileTreeMaker) **(Kendi yazdığım bir araç)**
  6. Git Bash
  7. Prettier
  8. Live Sever
+ 9. [JSFiddle](https://jsfiddle.net/ "JSFiddle sayfası") 
 
 # Kullanılan Yöntemler
 

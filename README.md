@@ -5,18 +5,25 @@
 ##### Öğretim Üyesi: Dr. Fehim KÖYLÜ
 ---
 ### Siteyi: https://gokselkucuksahin.github.io/webProgramming-I/ üzerinde gezebilirsiniz.
-
 ---
 # Dosyalar
+<b> \root</b>\
+╚═ <b>docs</b>\
+&nbsp; &nbsp; &nbsp; ╠═ <b>assets</b>\
+&nbsp; &nbsp; &nbsp; ║&nbsp; &nbsp;╠═ <b>styles</b>\
+&nbsp; &nbsp; &nbsp; ║&nbsp; &nbsp;║&nbsp; &nbsp;╠═ [style.css](docs/assets/styles/style.css "css style")\
+&nbsp; &nbsp; &nbsp; ║&nbsp; &nbsp;║&nbsp; &nbsp;╚═ End of Folder\
+&nbsp; &nbsp; &nbsp; ║&nbsp; &nbsp;╠═ <b>styles</b>\
+&nbsp; &nbsp; &nbsp; ║&nbsp; &nbsp;╚═ End of Folder\
+&nbsp; &nbsp; &nbsp; ║\
+&nbsp; &nbsp; &nbsp; ╠═ [index.html](docs/index.html "main.page")\
+x
  
- ║\
- ╠═\
-
-
- [index.html](docs/index.html "main.page")
-2. [style.css](docs/assets "css style")
+2. 
 3. 
- 
+```
+║ &nbsp; &nbsp; &nbsp;╠═ 
+``` 
 
 # Kullanılan Araçlar
 

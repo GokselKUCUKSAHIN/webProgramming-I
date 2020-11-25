@@ -16,3 +16,6 @@
 *.zip
 *.tar.gz
 *.rar
+
+# Special File
+TREE.md

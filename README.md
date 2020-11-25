@@ -61,12 +61,13 @@ _
  
 # Kullanılan Araçlar
 
- 1. HTML5
- 2. CSS3
- 3. Bootstrap 4
- 4. Javascript
- 5. jQuery
- 6. Vue.JS
+ 1. [HTML5](https://www.w3.org/TR/html52/)
+ 2. [CSS3](https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/)
+ 3. [Bootstrap](https://getbootstrap.com/) 4
+ 4. [Javascript](https://www.javascript.com/)
+ 5. [Vue.js](https://vuejs.org/)
+ 6. [jQuery](https://jquery.com/)
+ 7. [Font Awesome](https://fontawesome.com/)
 
 # Kullanılan Yazılımlar
 

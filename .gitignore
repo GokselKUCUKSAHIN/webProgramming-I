@@ -4,7 +4,6 @@
 *.exe.config
 *.pdb
 
-
 # Log file
 *.log
 
@@ -17,5 +16,5 @@
 *.tar.gz
 *.rar
 
-# Special File
+# Special Files
 TREE.md

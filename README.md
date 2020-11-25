@@ -57,6 +57,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[style.css](docs/assets/styles/style.css)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\
 _
+---
  
 # Kullanılan Araçlar
 
@@ -77,7 +78,7 @@ _
  6. Git Bash
  7. Prettier
  8. Live Sever
- 9. [JSFiddle](https://jsfiddle.net/ "JSFiddle sayfası") 
+9. [JSFiddle](https://jsfiddle.net/ "JSFiddle sayfası") 
 
 # Kullanılan Yöntemler
 
@@ -97,16 +98,16 @@ _
 # Dev Tools
 
 ```
-   ____________________________________________________________
- / \                                                           \.
-|   |    ..|'''.|   ||    .    ..|'''.|                '||     |.
- \_ |   .|'     '  ...  .||.  .|'     '  ... ...     .. ||     |.
-    |   ||    ....  ||   ||   ||    ....  ||  ||   .'  '||     |.
-    |   '|.    ||   ||   ||   '|.    ||   ||  ||   |.   ||     |.
-    |    ''|...'|  .||.  '|.'  ''|...'|   '|..'|.  '|..'||.    |
-    |   _______________________________________________________|__
-    |  /                                                         /.
-    \_/_________________________________________________________/.
+   ___________________________________________________________
+ / \                                                          \.
+|   |    ..|'''.|   ||    .    ..|'''.|                '||    |.
+ \_ |   .|'     '  ...  .||.  .|'     '  ... ...     .. ||    |.
+    |   ||    ....  ||   ||   ||    ....  ||  ||   .'  '||    |.
+    |   '|.    ||   ||   ||   '|.    ||   ||  ||   |.   ||    |.
+    |    ''|...'|  .||.  '|.'  ''|...'|   '|..'|.  '|..'||.   |
+    |   ______________________________________________________|__
+    |  /                                                        /.
+    \_/________________________________________________________/.
 ```
 
 ### Char Tablosu

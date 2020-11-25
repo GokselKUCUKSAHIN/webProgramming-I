@@ -74,14 +74,17 @@ _
  3. Sublime Text
  4. [Editor.md](https://pandao.github.io/editor.md/en.html)
  5. [MDTreeMaker](https://github.com/GokselKUCUKSAHIN/MDFileTreeMaker) **Kendi yazdığım bir araç**
+ 6. Git Bash
+ 7. Prettier
+ 8. Live Sever
 
 # Kullanılan Yöntemler
 
  1. Tasarım sistemleri
  2. GitHub Pages
  3. CI/CD
- 4. Test otomasyonu
- 5. Sunucusuz sistemler
+ 4. Sunucusuz sistemler
+
 
 ### 🛠 Yapılacaklar Listesi 📝
 - [x] Ödevler bireysel yapılacaktır. Grup olarak yapılamayacaktır. (10 puan)

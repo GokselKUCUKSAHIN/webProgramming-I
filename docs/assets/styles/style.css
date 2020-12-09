@@ -21,3 +21,10 @@
   color: #212529;
   -webkit-tab-highlight-color: transparent;
 }
+
+.fakePhoto {
+  margin: 0 auto;
+  width: 100%;
+  background-color: blueviolet;
+  border: 1px solid yellow;
+}

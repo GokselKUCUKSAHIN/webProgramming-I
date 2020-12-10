@@ -81,7 +81,7 @@
  5. [MDTreeMaker](https://github.com/GokselKUCUKSAHIN/MDFileTreeMaker) **(Kendi yazdığım bir araç)**
  6. Git Bash
  7. Prettier
- 8. Live Sever
+ 8. Live Server
 9. [JSFiddle](https://jsfiddle.net/ "JSFiddle sayfası") 
 
 # Kullanılan Yöntemler

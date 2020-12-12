@@ -318,7 +318,7 @@
                   aria-label="Toggle navigation"
                   @click="hamburgerClick"
                 >
-                  <span class="navbar-toggler-icon"
+                  <span :class="{'d-none': isOpen}" class="navbar-toggler-icon"
                     ><svg
                       class="svg-inline--fa fa-bars fa-w-14"
                       aria-hidden="true"
@@ -336,7 +336,7 @@
                       ></path>
                     </svg>
                   </span>
-                  <span class="navbar-close-icon d-none" aria-hidden="true"
+                  <span :class="{'d-none' : !isOpen}" class="navbar-close-icon" aria-hidden="true"
                     >×</span
                   >
                 </button>

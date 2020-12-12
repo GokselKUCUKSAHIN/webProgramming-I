@@ -1,67 +1,388 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head class="fontawesome-i2svg-active fontawesome-i2svg-complete">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🔂First Iteration🔂</title>
-    <link rel="stylesheet" href="assets/styles/style.css" />
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Iteration 1</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/docs/assets/styles/fa.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:200,300,400|Oswald:200,300,400"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
       crossorigin="anonymous"
     />
+
+    <!-- Gibson CSS -->
+    <link rel="stylesheet" href="/docs/assets/styles/min_js.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/docs/assets/styles/style.css" />
+
+    <!-- VUE JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="navbar_app">
+      <nav
+        id="nav-main-global"
+        class="navbar navbar-expand-lg py-1 py-md-3 fixed-top"
+      >
+        <div class="container position-relative">
+          <a class="navbar-brand" href="/"
+            ><img
+              src="https://static.gibson.com/gibson-web/branding/Header-Gibson-Logo.png"
+              alt="Gibson"
+          /></a>
+          <div
+            :class="{'offcanvas-collapse' : isMobile, 'open' : isOpen}"
+            class="navbar-collapse"
+            id="nav-global"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-toggle="dropdown"
+                  id="electrics-dd-toggle"
+                  >Electric Guitars</a
+                >
+                <div
+                  id="electric-guitar-nav"
+                  class="dropdown-menu"
+                  aria-labelledby="electrics-dd-toggle"
+                >
+                  <h6 class="dropdown-header">Shop By Collection</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/Guitars/Collection/Original"
+                    >The Original Collection</a
+                  >
+                  <a class="dropdown-item" href="/Guitars/Collection/Modern"
+                    >The Modern Collection</a
+                  >
+                  <a class="dropdown-item" href="/Guitars/Collection/Artist"
+                    >The Artist Collection</a
+                  >
+                  <a class="dropdown-item" href="/Guitars/Collection/Slash"
+                    >The Slash Collection</a
+                  >
+                  <a class="dropdown-item" href="/Custom-Shop"
+                    >Gibson Custom Shop</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Shop By Body Style</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/Guitars/Les-Paul"
+                    >Les Paul Models</a
+                  >
+                  <a class="dropdown-item" href="/Guitars/SG">SG Models</a>
+                  <a class="dropdown-item" href="/Guitars/ES"
+                    >ES-Style Models</a
+                  >
+                  <a class="dropdown-item" href="/Guitars/Bass">Basses</a>
+                  <a class="dropdown-item" href="/Guitars/Designer"
+                    >Designer Models</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  id="acoustics-dd-toggle"
+                  >Acoustic Guitars</a
+                >
+                <div
+                  id="acoustic-guitar-nav"
+                  class="dropdown-menu"
+                  aria-labelledby="acoustics-dd-toggle"
+                >
+                  <h6 class="dropdown-header">Gibson Acoustic</h6>
+                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="/Guitars/Collection/Original%20Acoustic"
+                    >Original Collection</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="/Guitars/Collection/Modern%20Acoustic"
+                    >Modern Collection</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Acoustic Custom Shop</h6>
+                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="/Guitars/Collection/acoustic-custom-shop-historic"
+                    >Acoustic Custom Shop Historic</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="/Guitars/Collection/acoustic-custom-shop-modern"
+                    >Acoustic Custom Shop Modern</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  id="gear-dd-toggle"
+                  >Accessories &amp; Lifestyle</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="#"
+                  >Support</a
+                >
+                <div
+                  id="support-dropdown"
+                  class="support-dropdown dropdown-menu dropdown-menu-right"
+                >
+                  <h5 class="dropdown-header">Contact Support</h5>
+                  <div class="dropdown-item">
+                    <strong>US &amp; Canada:</strong> 1-800-4GIBSON
+                  </div>
+                  <a class="dropdown-item" href="/Support/Virtual-Guitar-Tech"
+                    >Virtual Guitar Tech</a
+                  >
+                  <a class="dropdown-item" href="/Store/Policies"
+                    >Store Policies</a
+                  >
+                  <a class="dropdown-item" href="/Support/FAQ">Support FAQ</a>
+                  <div class="dropdown-divider"></div>
+                  <div class="dropdown-header">Dealers</div>
+                  <a class="dropdown-item" href="/Find-A-Store"
+                    >Dealer Locator</a
+                  >
+                  <a class="dropdown-item" href="/Online-Dealers"
+                    >Online Dealers</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://dealers.gibson.com"
+                    target="_blank"
+                    >Dealer Resource Center</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <div class="dropdown-header">Support Tools</div>
+                  <a class="dropdown-item" href="/Support/Warranty-Registration"
+                    >Product Registration</a
+                  >
+                  <a class="dropdown-item" href="/Support/Customer-Service"
+                    >Customer Service</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="/Support/Repair-And-Restoration"
+                    >Repair and Restoration</a
+                  >
+                  <a class="dropdown-item" href="/Support/Report-Counterfeits"
+                    >Report Counterfeits</a
+                  >
+                  <a class="dropdown-item" href="/Support/Serial-Number-Search"
+                    >Serial Number FAQ</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://legacy.gibson.com"
+                    target="_blank"
+                    >Gibson Guitar Specs (2015-2019)</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a href="http://dealers.gibson.com/" class="nav-link"
+                  >Dealer Resource Center</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="right-mobile-options fixbox">
+            <ul class="nav justify-content-end py-2 align-content-center">
+              <li class="nav-item ml-0 pl-0">
+                <a
+                  class="btn btn-link gibson-tv px-0"
+                  role="button"
+                  href="/GibsonTV"
+                  ><img
+                    src="https://static.gibson.com/gibson-web/branding/GibsonTV_Logo_White_SM.png"
+                    class="img-fluid"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-link find-store"
+                  title="Find a Gibson Authorized Retailer"
+                  href="/Find-A-Store"
+                >
+                  <svg
+                    class="svg-inline--fa fa-map-marker-alt fa-w-12 mr-2"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fal"
+                    data-icon="map-marker-alt"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M192 96c-52.935 0-96 43.065-96 96s43.065 96 96 96 96-43.065 96-96-43.065-96-96-96zm0 160c-35.29 0-64-28.71-64-64s28.71-64 64-64 64 28.71 64 64-28.71 64-64 64zm0-256C85.961 0 0 85.961 0 192c0 77.413 26.97 99.031 172.268 309.67 9.534 13.772 29.929 13.774 39.465 0C357.03 291.031 384 269.413 384 192 384 85.961 298.039 0 192 0zm0 473.931C52.705 272.488 32 256.494 32 192c0-42.738 16.643-82.917 46.863-113.137S149.262 32 192 32s82.917 16.643 113.137 46.863S352 149.262 352 192c0 64.49-20.692 80.47-160 281.931z"
+                    ></path>
+                  </svg>
+                  <small class="font-heading d-none d-md-inline-block"
+                    >Locate A<br />
+                    Dealer</small
+                  ></a
+                >
+              </li>
+              <li id="gibson-nav-cart" class="nav-item">
+                <a href="/Store/Cart" class="cart-toggler">
+                  <svg
+                    class="svg-inline--fa fa-shopping-cart fa-w-18"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fal"
+                    data-icon="shopping-cart"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M551.991 64H129.28l-8.329-44.423C118.822 8.226 108.911 0 97.362 0H12C5.373 0 0 5.373 0 12v8c0 6.627 5.373 12 12 12h78.72l69.927 372.946C150.305 416.314 144 431.42 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-17.993-7.435-34.24-19.388-45.868C506.022 391.891 496.76 384 485.328 384H189.28l-12-64h331.381c11.368 0 21.177-7.976 23.496-19.105l43.331-208C578.592 77.991 567.215 64 551.991 64zM240 448c0 17.645-14.355 32-32 32s-32-14.355-32-32 14.355-32 32-32 32 14.355 32 32zm224 32c-17.645 0-32-14.355-32-32s14.355-32 32-32 32 14.355 32 32-14.355 32-32 32zm38.156-192H171.28l-36-192h406.876l-40 192z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  id="cart-dd-toggle"
+                  class="cart-toggler fa-4x nav-link"
+                  style="display: none"
+                  ><span class="fa-layers fa-fw"
+                    ><svg
+                      class="svg-inline--fa fa-shopping-cart fa-w-18"
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fal"
+                      data-icon="shopping-cart"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M551.991 64H129.28l-8.329-44.423C118.822 8.226 108.911 0 97.362 0H12C5.373 0 0 5.373 0 12v8c0 6.627 5.373 12 12 12h78.72l69.927 372.946C150.305 416.314 144 431.42 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-17.993-7.435-34.24-19.388-45.868C506.022 391.891 496.76 384 485.328 384H189.28l-12-64h331.381c11.368 0 21.177-7.976 23.496-19.105l43.331-208C578.592 77.991 567.215 64 551.991 64zM240 448c0 17.645-14.355 32-32 32s-32-14.355-32-32 14.355-32 32-32 32 14.355 32 32zm224 32c-17.645 0-32-14.355-32-32s14.355-32 32-32 32 14.355 32 32-14.355 32-32 32zm38.156-192H171.28l-36-192h406.876l-40 192z"
+                      ></path>
+                    </svg>
+                    <span
+                      class="fa-layers-counter primary-bg"
+                      style="font-size: 2.5rem"
+                      >0</span
+                    ></span
+                  ></a
+                >
+              </li>
+              <li class="nav-item d-lg-none">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="offcanvas-collapse"
+                  data-target="#nav-global"
+                  aria-controls="nav-global"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  @click="hamburgerClick"
+                >
+                  <span class="navbar-toggler-icon"
+                    ><svg
+                      class="svg-inline--fa fa-bars fa-w-14"
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fal"
+                      data-icon="bars"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="navbar-close-icon d-none" aria-hidden="true"
+                    >×</span
+                  >
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="modal-shader" :class="{'d-none' : !isOpen}"></div>
+    </div>
+    <div>
+      <img src="/docs/assets/res/dev/placeholder.png" alt="" />
+    </div>
+    <div>
+      <img src="/docs/assets/res/me/_me.png" alt="" />
+    </div>
+    <div>
+      <pre>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quisquam, quia. Excepturi magni error ut accusantium vitae 
+        delectus architecto laborum quibusdam id, ab, tempora, eveniet 
+        esse nulla saepe. Eveniet, assumenda at?</p></pre>
+    </div>
+    <div>
+      <img src="/docs/assets/res/site/img/_slash.jpg" alt="" />
+    </div>
+    <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
+    <!-- Popper.js -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
       crossorigin="anonymous"
     ></script>
+    <!-- Bootstrap JS -->
     <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <!-- PRE DEV -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>  -->
-    <!-- AFTER DEV -->
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top py-1 py-md-3">
-      <div class="container position-relative">
-        <a href="/docs/assets/res/me/" class="navbar-brand">
-          <img
-            src="/docs/assets/res/site/logo/_gibson.png"
-            alt="Gibson Brand Logo"
-          />
-        </a>
-        <div class="navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown"></li>
-            <li class="nav-item dropdown"></li>
-            <li class="nav-item dropdown"></li>
-            <li class="nav-item dropdown"></li>
-            <li class="nav-item dropdown"></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <main role="main">
-      <div class="home pb-5 bg">
-        <section>
-          <div class="container">
-            <div class="card">
-              <a href="" class="d-block" href="/"></a>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
+
+    <!-- JavaScripts -->
     <script src="/docs/assets/scripts/controller.js"></script>
   </body>
 </html>

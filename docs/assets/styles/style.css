@@ -3,28 +3,14 @@
   text-align: center;
   width: 100%;
 }
-#dark-tint {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.67);
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-  font-weight: normal;
-  font-size: 1rem;
-  text-align: left;
-  line-height: 1.5;
-  color: #212529;
-  -webkit-tab-highlight-color: transparent;
-}
 
 .fakePhoto {
   margin: 0 auto;
   width: 100%;
   background-color: blueviolet;
   border: 1px solid yellow;
+}
+
+.fixbox {
+  min-width: 180px;
 }

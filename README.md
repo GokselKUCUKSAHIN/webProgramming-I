@@ -88,8 +88,9 @@
 
  1. Tasarım sistemleri
  2. GitHub Pages
- 3. CI/CD
- 4. Sunucusuz sistemler
+ 3. Sunucusuz sistemler
+ 4. 
+
 
 
 ### 🛠 Yapılacaklar Listesi 📝

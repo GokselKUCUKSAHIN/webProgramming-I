@@ -8,7 +8,7 @@
     />
     <title>Iteration 1</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/docs/assets/styles/fa.css">
+    <link rel="stylesheet" href="/docs/assets/styles/fa.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:200,300,400|Oswald:200,300,400"
       rel="stylesheet"
@@ -31,6 +31,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   </head>
   <body>
+    <!-- NAVBAR -->
     <div id="navbar_app">
       <nav
         id="nav-main-global"
@@ -145,24 +146,192 @@
                   id="gear-dd-toggle"
                   >Accessories &amp; Lifestyle</a
                 >
+                <div
+                  id="gear-nav"
+                  class="dropdown-menu dropdown-menu-right multi-column columns-3"
+                  aria-labelledby="gear-dd-toggle"
+                >
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <h6 class="dropdown-header">Accessories</h6>
+                      <div class="dropdown-divider"></div>
+                      <ul class="multi-column-dropdown">
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Accessories"
+                            >All Accessories</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Straps"
+                            >Straps</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Cases">Cases</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Stands"
+                            >Stands</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Capos">Capos</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Picks">Picks</a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/Gear/Cleaning-and-Care"
+                            >Cleaning &amp; Care</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h6 class="dropdown-header">Lifestyle</h6>
+                      <div class="dropdown-divider"></div>
+                      <ul class="multi-column-dropdown">
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Lifestyle"
+                            >All Lifestyle</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Apparel"
+                            >Apparel</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Headwear"
+                            >Headwear</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/Gear/Home-Office-and-Studio"
+                            >Home, Office &amp; Studio</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Phone-Cases"
+                            >Phone Cases</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Pins-and-Patches"
+                            >Pins &amp; Patches</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h6 class="dropdown-header">Hardware</h6>
+                      <div class="dropdown-divider"></div>
+                      <ul class="multi-column-dropdown">
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Hardware"
+                            >All Hardware</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/Gear/Pickups-And-Electronics"
+                            >Pickups &amp; Electronics</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Bridges"
+                            >Bridges</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Covers"
+                            >Covers</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Knobs">Knobs</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Mounting"
+                            >Mounting</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Pickguards"
+                            >Pickguards</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Strap-Buttons"
+                            >Strap Buttons</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Tailpieces"
+                            >Tailpieces</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Tuning"
+                            >Tuning</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <h6 class="dropdown-header">Strings</h6>
+                      <div class="dropdown-divider"></div>
+                      <ul class="multi-column-dropdown">
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Strings"
+                            >All Strings</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Electric-Strings"
+                            >Electric Strings</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Acoustic-Strings"
+                            >Acoustic Strings</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Gear/Bass-Strings"
+                            >Bass Strings</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   data-toggle="dropdown"
                   href="#"
-                  >Support</a
+                  >Click Me</a
                 >
                 <div
                   id="support-dropdown"
                   class="support-dropdown dropdown-menu dropdown-menu-right"
                 >
-                  <h5 class="dropdown-header">Contact Support</h5>
-                  <div class="dropdown-item">
-                    <strong>US &amp; Canada:</strong> 1-800-4GIBSON
-                  </div>
-                  <a class="dropdown-item" href="/Support/Virtual-Guitar-Tech"
-                    >Virtual Guitar Tech</a
+                  <h5 class="dropdown-header">About Me</h5>
+                  <div></div>
+                  <a class="dropdown-item">
+                    <em>Göksel KÜÇÜKSAHİN:</em> &nbsp;1030522874
+                  </a>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.github.com/GokselKUCUKSAHIN"
+                    >GitHub</a
                   >
                   <a class="dropdown-item" href="/Store/Policies"
                     >Store Policies</a
@@ -336,7 +505,10 @@
                       ></path>
                     </svg>
                   </span>
-                  <span :class="{'d-none' : !isOpen}" class="navbar-close-icon" aria-hidden="true"
+                  <span
+                    :class="{'d-none' : !isOpen}"
+                    class="navbar-close-icon"
+                    aria-hidden="true"
                     >×</span
                   >
                 </button>
@@ -347,22 +519,299 @@
       </nav>
       <div id="modal-shader" :class="{'d-none' : !isOpen}"></div>
     </div>
-    <div>
-      <img src="/docs/assets/res/dev/placeholder.png" alt="" />
-    </div>
-    <div>
-      <img src="/docs/assets/res/me/_me.png" alt="" />
-    </div>
-    <div>
-      <pre>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Quisquam, quia. Excepturi magni error ut accusantium vitae 
-        delectus architecto laborum quibusdam id, ab, tempora, eveniet 
-        esse nulla saepe. Eveniet, assumenda at?</p></pre>
-    </div>
-    <div>
-      <img src="/docs/assets/res/site/img/_slash.jpg" alt="" />
-    </div>
+
+    <!-- BODY -->
+    <main id="body-wrap" role="main">
+      <div class="home pb-5" id="home">
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <a href="/"
+                ><img
+                  src="/docs/assets/res/site/img/_ornament.jpg"
+                  class="d-block w-100"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section id="homepage-browse" class="homepage-browse">
+          <div class="container">
+            <div
+              class="gibson-card inverted-border py-2 py-md-3 py-lg-5 pt-md-0 pt-lg-0"
+            >
+              <div class="gibson-crown"></div>
+              <div class="heading">
+                Discover Your Style<span class="d-block"
+                  >Click A Body Style to Browse</span
+                >
+              </div>
+              <div class="row body-types">
+                <div class="col-4 col-sm-2 col-md-2 pb-3">
+                  <a href="/">
+                    <img
+                      src="/docs/assets/res/site/guitars/_les_paul.png"
+                      class="img-fluid"
+                    /><span class="d-block">Les Paul</span>
+                  </a>
+                </div>
+                <div class="col-4 col-sm-2 col-md-2 pb-3">
+                  <a href="/">
+                    <img
+                      src="/docs/assets/res/site/guitars/_sg.png"
+                      class="img-fluid"
+                    /><span class="d-block">SG</span>
+                  </a>
+                </div>
+                <div class="col-4 col-sm-2 col-md-2 pb-3">
+                  <a href="/">
+                    <img
+                      src="/docs/assets/res/site/guitars/_es.png"
+                      class="img-fluid"
+                    /><span class="d-block">ES</span>
+                  </a>
+                </div>
+                <div class="col-4 col-sm-2 col-md-2 pb-3">
+                  <a href="/">
+                    <img
+                      src="/docs/assets/res/site/guitars/_acoustic.png"
+                      class="img-fluid"
+                    /><span class="d-block">Acoustic</span>
+                  </a>
+                </div>
+                <div class="col-4 col-sm-2 col-md-2 pb-3">
+                  <a href="/">
+                    <img
+                      src="/docs/assets/res/site/guitars/_designer.png"
+                      class="img-fluid"
+                    /><span class="d-block">Designer</span>
+                  </a>
+                </div>
+                <div class="col-4 col-sm-2 col-md-2 pb-3">
+                  <a href="/">
+                    <img
+                      src="/docs/assets/res/site/guitars/_basses.png"
+                      class="img-fluid"
+                    /><span class="d-block">Basses</span>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 text-left">
+                  <a class="d-inline-block" href="/"
+                    ><img
+                      src="/docs/assets/res/site/banner/_accessories.png"
+                      class="img-fluid mb-4"
+                      nopin="nopin"
+                  /></a>
+                </div>
+                <div class="col-md-6 text-right">
+                  <a class="d-inline-block" href="/"
+                    ><img
+                      src="/docs/assets/res/site/banner/_custom.png"
+                      class="img-fluid mb-4"
+                      nopin="nopin"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <div class="gibson-crown"></div>
+              <a
+                class="d-block"
+                href="/"
+                ><img
+                  src="/docs/assets/res/site/img/_victoria.jpg"
+                  class="d-block w-100"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <div class="gibson-crown"></div>
+              <a
+                href="/"
+                target="_blank"
+                ><img
+                  src="/docs/assets/res/site/img/_peace.jpg"
+                  class="d-block w-100"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <div class="gibson-crown"></div>
+              <a class="d-block" href="/"
+                ><img
+                  src="/docs/assets/res/site/img/_aviator.jpg"
+                  class="d-block w-100"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <div class="gibson-crown"></div>
+              <a class="d-block" href="/"
+                ><img
+                  src="/docs/assets/res/site/img/_hendrix.jpg"
+                  class="d-block w-100"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <div class="gibson-crown"></div>
+              <a
+                class="d-block"
+                href="/"
+                ><img
+                  src="/docs/assets/res/site/img/_episode5.jpg"
+                  class="d-block w-100"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <div class="gibson-crown"></div>
+              <a
+                class="d-block"
+                href="/"
+                ><img
+                  src="/docs/assets/res/site/img/_adam.jpg"
+                  class="d-block w-100"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <div class="gibson-crown"></div>
+              <a class="d-block" href="/"
+                ><img
+                  src="/docs/assets/res/site/img/_norman.jpg"
+                  class="d-block w-100"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="gibson-card">
+            <div class="gibson-crown"></div>
+            <a class="d-block" href="/">
+              <img
+                src="/docs/assets/res/site/img/_slash.jpg"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <div class="gibson-crown"></div>
+              <a class="d-block" href="/"
+                ><img
+                  src="/docs/assets/res/site/img/_dave.jpg"
+                  class="d-block w-100"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <div class="gibson-crown"></div>
+              <a class="d-block" href="/">
+                <img
+                  class="d-block w-100"
+                  src="/docs/assets/res/site/img/_leger.jpg"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <div class="gibson-crown"></div>
+              <a
+                class="d-block"
+                href="/"
+                ><img
+                  src="/docs/assets/res/site/img/_guitar.jpg"
+                  class="d-block w-100"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <div class="gibson-crown"></div>
+              <a class="d-block" href="/">
+                <img
+                  class="d-block w-100"
+                  src="/docs/assets/res/site/img/_virtual.jpg"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="gibson-card">
+              <div class="gibson-crown"></div>
+              <a class="d-block" href="/"
+                ><img
+                  src="/docs/assets/res/site/img/_string.jpg"
+                  class="d-block w-100"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="gibson-card">
+            <div class="gibson-crown"></div>
+            <a class="d-block" target="_blank" href="/">
+              <img
+                class="d-block w-100"
+                src="/docs/assets/res/site/img/_g3.jpg"
+                nopin="nopin"
+              />
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

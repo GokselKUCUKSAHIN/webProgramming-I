@@ -14,3 +14,18 @@
 .fixbox {
   min-width: 180px;
 }
+
+.pictureBox {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+}
+
+.autoFill {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 300px;
+}

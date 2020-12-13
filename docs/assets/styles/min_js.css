@@ -121,6 +121,7 @@ input.form-control:not(.default),
 #nav-main-global .navbar-collapse .nav-link,
 #nav-main-global .navbar-collapse .dropdown-item {
   font-size: 0.875rem;
+  /* color: snow; */
 }
 #nav-main-global .navbar-collapse .nav-link:active,
 #nav-main-global .navbar-collapse .dropdown-item:active {

@@ -80,7 +80,7 @@ _
 
  1. [HTML5](https://www.w3.org/TR/html52/)
  2. [CSS3](https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/)
- 3. [Bootstrap](https://getbootstrap.com/) 4
+ 3. [Bootstrap 4](https://getbootstrap.com/)
  4. [Javascript](https://www.javascript.com/)
  5. [Vue.js](https://vuejs.org/)
  6. [jQuery](https://jquery.com/)
@@ -103,14 +103,12 @@ _
  1. Tasarım sistemleri
  2. GitHub Pages
  3. Sunucusuz sistemler
- 4. 
-
 
 
 ### 🛠 Yapılacaklar Listesi 📝
 - [x] Ödevler bireysel yapılacaktır. Grup olarak yapılamayacaktır. (10 puan)
 - [x] Her depo bir readme dosyası ile açıklamaya sahip olmalıdır. (10 puan)
-- [ ] Seçeceğiniz bir web sitesinin ana sayfasının birebir kopyasını yapmanız gerekmektedir. (50 puan)
+- [x] Seçeceğiniz bir web sitesinin ana sayfasının birebir kopyasını yapmanız gerekmektedir. (50 puan)
 - [ ] Github paylaşımının link adresini bu ödev sayfasına yüklemelisiniz. (10 puan)
 - [ ] Herkes yaptığı site tasarımının içine bir sayfa da hakkında/özgeçmiş sayfası koyarak kendini tanıtıp, yaptığı projelerden ve uzmanlıklarından bahsetmelidir. (10 puan)
 

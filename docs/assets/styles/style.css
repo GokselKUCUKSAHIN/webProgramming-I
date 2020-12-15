@@ -29,3 +29,6 @@
   max-width: 1200px;
   min-width: 300px;
 }
+*::selection {
+  background: rgba(red, green, blue, alpha);
+}

@@ -1,0 +1,112 @@
+html,
+body {
+  background: #000;
+  margin: 0;
+}
+
+.mid-frame {
+  margin-left: 15%;
+  margin-right: 15%;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+  /* padding-left: 5px; */
+  /* padding-right: 5px; */
+  /* min-width: 600px; */
+}
+.btn {
+  cursor: pointer;
+}
+.btn-sm {
+  width: 8rem !important;
+  height: 3rem !important;
+}
+
+.fadeBox {
+  z-index: 0;
+  background: linear-gradient(
+    269.16deg,
+    #ffe580 -15.83%,
+    #ff7571 -4.97%,
+    #ff7270 15.69%,
+    #ea5dad 32.43%,
+    #c2a0fd 50.09%,
+    #9867f0 67.47%,
+    #3bf0e4 84.13%,
+    #33ce43 105.13%,
+    #b2f4b6 123.24%
+  );
+  background-position: 50% 50%;
+  background-size: 500%;
+  /* transform: translate3d(0, 0, 0); */
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  animation: gradient 15s ease infinite;
+}
+.fadeBox::before {
+  z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  background: #000;
+}
+.fadeBox:hover::before {
+  
+  animation: fIn 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fIn {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-box {
+  color: aliceblue;
+}
+
+.text-cont {
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 3rem;
+  padding: 0;
+  text-align: center;
+}
+.text-cont::selection{
+  background:rgba(red, green, blue, alpha)
+}
+
+.blc {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blc li {
+  display: inline-block;
+}

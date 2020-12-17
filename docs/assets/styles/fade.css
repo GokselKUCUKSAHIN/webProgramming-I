@@ -2,6 +2,7 @@ html,
 body {
   background: #000;
   margin: 0;
+  font-family: "alliance", mono, sans-serif;
 }
 
 .mid-frame {
@@ -16,10 +17,9 @@ body {
   /* padding-right: 5px; */
   /* min-width: 600px; */
 }
-.btn {
-  cursor: pointer;
-}
+
 .btn-sm {
+  cursor: pointer;
   width: 8rem !important;
   height: 3rem !important;
 }
@@ -42,12 +42,23 @@ body {
   background-size: 500%;
   /* transform: translate3d(0, 0, 0); */
   content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
+  /* width: 100%; */
+  /* height: 100%; */
   position: relative;
   animation: gradient 15s ease infinite;
 }
+
+.fixedSize {
+  display: block;
+}
+
+.flexSize {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: auto !important;
+} 
+
 .fadeBox::before {
   z-index: -1;
   content: "";
@@ -60,8 +71,7 @@ body {
   background: #000;
 }
 .fadeBox:hover::before {
-  
-  animation: fIn 0.5s ease-in-out;
+  animation: fIn 0.3s ease-in-out;
   animation-fill-mode: forwards;
 }
 
@@ -86,19 +96,31 @@ body {
   }
 }
 
-.text-box {
-  color: aliceblue;
-}
-
 .text-cont {
+  color: #fff;
   margin: 0 auto;
   font-size: 20px;
   line-height: 3rem;
   padding: 0;
   text-align: center;
 }
-.text-cont::selection{
-  background:rgba(red, green, blue, alpha)
+
+.text-cont:hover {
+  animation: paintItBlack 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes paintItBlack {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+.text-cont::selection {
+  background: rgba(red, green, blue, alpha);
 }
 
 .blc {
@@ -109,4 +131,19 @@ body {
 
 .blc li {
   display: inline-block;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.nav li {
+  display: inline-block;
+  text-align: left;
+}
+a  {
+  text-decoration: none;
 }

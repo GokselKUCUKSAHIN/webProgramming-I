@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: "alliance", mono, sans-serif;
 }
+
 *::selection {
   background: rgba(red, green, blue, alpha) !important;
 }
@@ -163,10 +164,6 @@ body {
   }
 }
 
-.text-cont::selection {
-  background: rgba(red, green, blue, alpha);
-}
-
 .blc {
   list-style-type: none;
   margin: 0;
@@ -205,6 +202,7 @@ a {
     left: 0;
     width: 40%;
     overflow-y: scroll;
+    /* Scroll barı gizle */
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
@@ -216,6 +214,7 @@ a {
     left: 40%;
     width: 60%;
     overflow-y: scroll;
+    /* Scroll barı gizle */
     -ms-overflow-style: none;
     scrollbar-width: none;
   }

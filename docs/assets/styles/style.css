@@ -486,7 +486,7 @@ footer .nav-link {
   background-color: #4c5e7b;
 }
 .btn.btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(96, 118, 154, 0.3);""
+  box-shadow: 0 0 0 0.2rem rgba(96, 118, 154, 0.3);
 }
 .btn.btn-outline-primary {
   border-color: #60769a;

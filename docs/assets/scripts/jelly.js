@@ -8,9 +8,9 @@ new Vue({
     Osman Düşüngel Orta Okulunda; Liseyi Melikgaz\
      Mustafa Eminoğlu Lisesinde okudum.",
      details:  "Küçük yaştan itibaren teknoloji \
-     ve bilgisayarlar karşı ilgili olmamdan dolayı \
+     ve bilgisayarlara karşı ilgili olmamdan dolayı \
      Bilgisayar Mühendisi olmaya karar verdim. Hobilerim; Akrilik \
-     tablo yapmak🎨 ve video oyunları🕹. Sıkı Star Wars🌑 ve IronMaiden \
+     tablo yapmak🎨 ve video oyunları🕹. Ayrıca sıkı Star Wars🌑 ve IronMaiden \
      hayranıyımdır🤘. "
   },
 });

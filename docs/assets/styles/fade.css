@@ -44,7 +44,7 @@ a {
 }
 
 #right-part {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   text-align: center;
   height: calc(100% - 60px);
 }
@@ -164,6 +164,7 @@ a {
 .text-cont::selection {
   background: rgb(red, green, blue, alpha);
 }
+
 .text-cont:hover {
   animation: paintItBlack 0.3s ease;
   animation-fill-mode: forwards;
@@ -320,4 +321,39 @@ a {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+}
+
+/* Right Side CSS*/
+
+.text-gradient {
+  letter-spacing: -0.03em;
+  background: linear-gradient(
+    270.97deg,
+    #ffe580 -21.36%,
+    #ff7571 -2.45%,
+    #ea5dad 26.84%,
+    #c2a0fd 64.15%,
+    #3bf0e4 108.29%,
+    #b2f4b6 159.03%
+  );
+  background-position: 50% 50%;
+  background-size: 150%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jh1 {
+  display: block;
+  font-family: "alliance",mono,sans-serif !important;
+  font-size: 75px !important;
+  line-height: 1.1;
+  font-weight: 500 !important;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.r-div {
+  margin: 10px !important;
+  text-align: center;
 }

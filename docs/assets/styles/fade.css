@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 html,
 body {
   background: #000;
@@ -10,26 +13,101 @@ body {
 }
 
 .top-blank {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  min-height: 4rem;
+  min-height: 60px;
   display: block;
   box-sizing: border-box;
   content: "";
   background-color: rgba(155, 155, 155, 0.155);
 }
 
+.myPageApp {
+  margin: 0;
+  overflow: hidden !important;
+  height: 100%;
+}
+
+@media (min-width: 1100px) {
+  #left-part {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    overflow-y: scroll;
+    /* Scroll barı gizle */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  #right-part {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 30%;
+    width: 70%;
+    overflow-y: scroll;
+    /* Scroll barı gizle */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+#left-part {
+  background-color: crimson;
+  text-align: center;
+  height: calc(100% - 60px);
+}
+
+#left-part::-webkit-scrollbar {
+  display: none;
+}
+
+#right-part {
+  background-color: lightgreen;
+  text-align: center;
+  height: calc(100% - 60px);
+}
+
+#right-part::-webkit-scrollbar {
+  display: none;
+}
+
+.img-frame {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nametag {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  /* margin-left: 5%; */
+  /* margin-right: 5%; */
+  background-color: snow;
+  color: #000;
+  border-radius: 40px;
+  line-height: 18px;
+  font-size: 24px;
+  width: 315px;
+  margin-bottom: 50px;
+}
+
+.border-p {
+  border-radius: 30px;
+  padding: 0.4rem;
+}
 .jelly-img {
   border-radius: 50%;
-  /* width: 100%; */
-  /* height: 100%; */
+  width: 100%;
+  height: 100%;
 }
 .circle {
   border-radius: 50%;
 }
 .rainbow {
-  display: inline-block;
   padding: 1.4%;
   background: linear-gradient(
     280.16deg,
@@ -43,6 +121,7 @@ body {
     #33ce43 105.13%,
     #b2f4b6 123.24%
   );
+  /* display: inline-block; */
   background-position: 50% 50%;
   background-size: 400%;
   animation: gradient 16s ease infinite;
@@ -83,10 +162,7 @@ body {
   );
   background-position: 50% 50%;
   background-size: 500%;
-  /* transform: translate3d(0, 0, 0); */
   content: "";
-  /* width: 100%; */
-  /* height: 100%; */
   position: relative;
   animation: gradient 16s ease infinite;
 }
@@ -150,6 +226,9 @@ body {
   text-align: center;
 }
 
+.text-cont::selection {
+  background: rgb(red, green, blue, alpha);
+}
 .text-cont:hover {
   animation: paintItBlack 0.3s ease;
   animation-fill-mode: forwards;
@@ -186,56 +265,4 @@ body {
 
 a {
   text-decoration: none;
-}
-
-.myPageApp {
-  margin: 0;
-  overflow: hidden !important;
-  height: 100%;
-}
-
-@media (min-width: 992px) {
-  #left-part {
-    position: absolute;
-    top: 4rem;
-    bottom: 0;
-    left: 0;
-    width: 40%;
-    overflow-y: scroll;
-    /* Scroll barı gizle */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  #right-part {
-    position: absolute;
-    top: 4rem;
-    bottom: 0;
-    left: 40%;
-    width: 60%;
-    overflow-y: scroll;
-    /* Scroll barı gizle */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-}
-
-#left-part {
-  /* background-color: #fc6e51; */
-  text-align: center;
-  height: calc(100% - 4rem);
-}
-
-#left-part::-webkit-scrollbar {
-  display: none;
-}
-
-#right-part {
-  /* background-color: lightgreen; */
-  text-align: center;
-  height: calc(100% - 4rem);
-}
-
-#right-part::-webkit-scrollbar {
-  display: none;
 }

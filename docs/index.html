@@ -586,185 +586,19 @@
           </div>
         </section>
 
-        <section class="container">
-          <div class="card-view">
-            <div class="crown-logo"></div>
-            <a class="d-block" href="/webProgramming-I/"
-              ><img
-                src="assets/res/site/img/0victoria.jpg"
-                class="d-block w-100"
-            /></a>
-          </div>
-        </section>
-
-        <section class="container">
-          <div class="card-view">
-            <div class="crown-logo"></div>
-            <a href="/webProgramming-I/" target="_blank"
-              ><img src="assets/res/site/img/0peace.jpg" class="d-block w-100"
-            /></a>
-          </div>
-        </section>
-
-        <section class="container">
-          <div class="card-view">
-            <div class="crown-logo"></div>
-            <a class="d-block" href="/webProgramming-I/"
-              ><img
-                src="assets/res/site/img/0aviator.jpg"
-                class="d-block w-100"
-            /></a>
-          </div>
-        </section>
-
-        <section class="container">
-          <div class="card-view">
-            <div class="crown-logo"></div>
-            <a class="d-block" href="/webProgramming-I/"
-              ><img
-                src="assets/res/site/img/0hendrix.jpg"
-                class="d-block w-100"
-            /></a>
-          </div>
-        </section>
-
-        <section class="container">
-          <div class="card-view">
-            <div class="crown-logo"></div>
-            <a class="d-block" href="/webProgramming-I/"
-              ><img src="assets/res/site/img/0pickup.jpg" class="d-block w-100"
-            /></a>
-          </div>
-        </section>
-
-        <section class="container">
-          <div class="card-view">
-            <div class="crown-logo"></div>
-            <a class="d-block" href="/webProgramming-I/"
-              ><img
-                src="assets/res/site/img/0episode5.jpg"
-                class="d-block w-100"
-            /></a>
-          </div>
-        </section>
-
-        <section class="container">
-          <div class="card-view">
-            <div class="crown-logo"></div>
-            <a class="d-block" href="/webProgramming-I/"
-              ><img src="assets/res/site/img/0adam.jpg" class="d-block w-100"
-            /></a>
-          </div>
-        </section>
-
-        <section class="container">
-          <div class="card-view">
-            <div class="crown-logo"></div>
-            <a class="d-block" href="/webProgramming-I/"
-              ><img src="assets/res/site/img/0norman.jpg" class="d-block w-100"
-            /></a>
-          </div>
-        </section>
-
-        <section class="container">
-          <div class="card-view">
-            <div class="crown-logo"></div>
-            <a class="d-block" href="/webProgramming-I/">
-              <img src="assets/res/site/img/0slash.jpg" class="img-fluid" />
-            </a>
-          </div>
-        </section>
-
-        <section>
-          <div class="container">
-            <div class="card-view">
-              <div class="crown-logo"></div>
-              <a class="d-block" href="/webProgramming-I/"
-                ><img src="assets/res/site/img/0dave.jpg" class="d-block w-100"
-              /></a>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="container">
+        <!-- VUE V-FOR -->
+        <div id="card_app">
+          <!-- HEAD -->
+          <section v-for="item in imgs" :key="item" class="container">
             <div class="card-view">
               <div class="crown-logo"></div>
               <a class="d-block" href="/webProgramming-I/">
-                <img
-                  class="d-block w-100"
-                  src="assets/res/site/img/0leger.jpg"
-                />
+                <img :src="item" class="d-block w-100" />
               </a>
             </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="container">
-            <div class="card-view">
-              <div class="crown-logo"></div>
-              <a class="d-block" href="/webProgramming-I/"
-                ><img
-                  src="assets/res/site/img/0riff_lord.jpg"
-                  class="d-block w-100"
-              /></a>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="container">
-            <div class="card-view">
-              <div class="crown-logo"></div>
-              <a class="d-block" href="/webProgramming-I/"
-                ><img
-                  src="assets/res/site/img/0guitar.jpg"
-                  class="d-block w-100"
-              /></a>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="container">
-            <div class="card-view">
-              <div class="crown-logo"></div>
-              <a class="d-block" href="/webProgramming-I/">
-                <img
-                  class="d-block w-100"
-                  src="assets/res/site/img/0virtual.jpg"
-                />
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="container">
-            <div class="card-view">
-              <div class="crown-logo"></div>
-              <a class="d-block" href="/webProgramming-I/"
-                ><img
-                  src="assets/res/site/img/0string.jpg"
-                  class="d-block w-100"
-              /></a>
-            </div>
-          </div>
-        </section>
-
-        <section class="container">
-          <div class="card-view">
-            <div class="crown-logo"></div>
-            <a class="d-block" target="_blank" href="/webProgramming-I/">
-              <img
-                class="d-block w-100"
-                src="assets/res/site/img/0g3.jpg"
-                nopin="nopin"
-              />
-            </a>
-          </div>
-        </section>
+          </section>
+          <!-- TAIL -->
+        </div>
       </div>
     </main>
 
@@ -954,90 +788,40 @@
             </div>
           </div>
         </div>
-        <div class="row ftr-link-navs">
+        <div class="row ftr-link-navs" id="footer_app">
           <div class="col-md-3 col-sm-6 col-xs-6">
             <h5 class="text-left">Our Company</h5>
             <ul class="list-unstyled justify-content-start">
-              <li><a href="/webProgramming-I/">About Gibson Brands</a></li>
-              <li><a href="/webProgramming-I/">Careers</a></li>
-              <li><a href="/webProgramming-I/">Contact Us</a></li>
-              <li><a href="/webProgramming-I/">News</a></li>
-              <li><a href="/webProgramming-I/">Gibson TV</a></li>
-              <li>
-                <a href="/webProgramming-I/" target="_blank">Gibson Gives </a>
-              </li>
-              <li>
-                <a href="/webProgramming-I/" target="_blank"
-                  >Gibson Generation Group</a
-                >
+              <!-- V-FOR -->
+              <li v-for="item in ourcomp" :key="item">
+                <a href="/webProgramming-I/" target="_blank">{{item}}</a>
               </li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-6">
             <h5 class="text-left">Products</h5>
             <ul class="list-unstyled justify-content-start">
-              <li><a href="/webProgramming-I/">Les Paul Models</a></li>
-              <li><a href="/webProgramming-I/">SG Models</a></li>
-              <li><a href="/webProgramming-I/">ES-Style Models</a></li>
-              <li><a href="/webProgramming-I/">Basses</a></li>
-              <li><a href="/webProgramming-I/">Designer Models</a></li>
-              <li><a href="/webProgramming-I/">Gibson Custom Shop</a></li>
-              <li><a href="/webProgramming-I/">Super Jumbo Models</a></li>
-              <li>
-                <a href="/webProgramming-I/">Square Shoulder Models</a>
-              </li>
-              <li>
-                <a href="/webProgramming-I/">Round Shoulder Models</a>
-              </li>
-              <li><a href="/webProgramming-I/">Small Body Models</a></li>
-              <li><a href="/webProgramming-I/">Songwriter Models</a></li>
-              <li>
-                <a href="/webProgramming-I/">Gibson Gear </a>
-              </li>
-              <li><a href="/webProgramming-I/">Gibson Hardware</a></li>
-              <li>
-                <a href="/webProgramming-I/">Gibson Lifestyle &amp; Apparel</a>
+              <!-- V-FOR -->
+              <li v-for="item in gmodels" :key="item">
+                <a href="/webProgramming-I/">{{item}}</a>
               </li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-6">
             <h5 class="text-left">Support</h5>
             <ul class="list-unstyled justify-content-start">
-              <li><a href="/webProgramming-I/">Customer Service</a></li>
-              <li>
-                <a href="/webProgramming-I/">Virtual Guitar Tech</a>
-              </li>
-              <li>
-                <a href="/webProgramming-I/"
-                  >Warranty Registration &amp; Info</a
-                >
-              </li>
-              <li>
-                <a href="/webProgramming-I/">Repair and Restoration</a>
-              </li>
-              <li>
-                <a href="/webProgramming-I/">Report Counterfeits</a>
-              </li>
-              <li>
-                <a href="/webProgramming-I/">Serial Number FAQ</a>
-              </li>
-              <li><a href="/webProgramming-I/">Store Policies &amp; FAQ</a></li>
-              <li>
-                <a href="/webProgramming-I/" target="_blank"
-                  >Gibson Guitar Specs (2015-2019)</a
-                >
+              <!-- V-FOR -->
+              <li v-for="item in supp" :key="item">
+                <a target="_blank" href="/webProgramming-I/">{{item}}</a>
               </li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-6">
             <h5 class="text-left">Dealer Resources</h5>
             <ul class="list-unstyled justify-content-start">
-              <li><a href="/webProgramming-I/">Find a Gibson Dealer</a></li>
-              <li><a href="/webProgramming-I/">Online Dealers</a></li>
-              <li>
-                <a href="/webProgramming-I/" target="_blank"
-                  >Dealer Resource Center</a
-                >
+              <!-- V-FOR -->
+              <li v-for="item in dealer" :key="item">
+                <a target="_blank" href="/webProgramming-I/">{{item}}</a>
               </li>
             </ul>
           </div>

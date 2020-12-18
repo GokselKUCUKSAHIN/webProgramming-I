@@ -34,7 +34,7 @@ new Vue({
     countUp()
     {
       this.count++;
-      console.log(this.count);
+      // console.log(this.count);
       if(this.count >= 7){
         this.count = 0;
         this.jumpKen();

@@ -1,3 +1,5 @@
+// index.html'in çalışabilmesi için gerekli 
+// fonksiyonları barındıran kendi yazdığım Controller.
 new Vue({
   el: "#navbar_app",
   data: {

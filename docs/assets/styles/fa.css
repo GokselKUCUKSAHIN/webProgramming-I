@@ -1,3 +1,4 @@
+/* Font Awesome'un çalışabilmesi için gerekli CSS */
 svg:not(:root).svg-inline--fa {
   overflow: visible;
 }

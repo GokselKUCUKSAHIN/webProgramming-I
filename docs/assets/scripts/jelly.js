@@ -13,11 +13,14 @@ new Vue({
      Bilgisayar Mühendisi olmaya karar verdim. Hobilerim; Akrilik \
      tablo yapmak🎨 ve video oyunları🕹. Ayrıca sıkı Star Wars🌑 ve IronMaiden \
      hayranıyımdır🤘. ",
+    egg: "ve JOJO!",
+    link: "https://youtu.be/2MtOpB5LlUA?t=72",
     screensize: {
       w: 0,
       h: 0,
     },
     isActive: false,
+    ee: false,
     kenStyle: "left: -100px; top: 3000px;",
     count: 0,
   },
@@ -31,11 +34,10 @@ new Vue({
     this.updateScreen(window.innerWidth, window.innerHeight);
   },
   methods: {
-    countUp()
-    {
+    countUp() {
       this.count++;
       // console.log(this.count);
-      if(this.count >= 7){
+      if (this.count >= 7) {
         this.count = 0;
         this.jumpKen();
       }
@@ -44,6 +46,7 @@ new Vue({
       this.kenStyle = `left: ${l}px; top: ${t}px`;
     },
     jumpKen() {
+      this.ee = true;
       this.isActive = true;
       let kx = this.screensize.w / 2;
       let ky = this.screensize.h + 50;

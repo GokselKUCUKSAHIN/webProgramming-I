@@ -25,9 +25,19 @@
   <body>
     <!-- 5% height Blank - RESERVED -->
     <div class="top-blank"></div>
+
     <!-- Main Body -->
     <main>
       <div id="app">
+        <div id="easter-egg" :class="{'d-none': !isActive}">
+          <div style="position: absolute" :style="kenStyle">
+            <img
+              src="assets/res/me/0shinryuken_fast.gif"
+              alt="ken"
+              style="height: 20em"
+            />
+          </div>
+        </div>
         <div class="row">
           <!-- LEFT -->
           <div id="left-part">
@@ -36,7 +46,7 @@
             <div class="case">
               <div class="img-frame pt-4">
                 <div class="rainbow tin circle">
-                  <img class="jelly-img" src="assets/res/me/0me.png" />
+                  <img @click="countUp" class="jelly-img" src="assets/res/me/0me.png" />
                 </div>
                 <!-- NAMETAG -->
                 <div class="nametag mt-3">Göksel <b>KÜÇÜKŞAHİN</b></div>
@@ -59,12 +69,15 @@
             <div class="r-div">
               <h1 class="text-gradient jh1">Azdan az, çoktan çok gider!</h1>
               <div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="rainbow mx-4" style="border-radius: 30px; padding: 0.4%">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <div
+                  class="rainbow mx-4"
+                  style="border-radius: 30px; padding: 0.4%"
+                >
                   <div
                     style="
                       border-radius: 28px;

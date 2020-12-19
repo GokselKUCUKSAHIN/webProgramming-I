@@ -7,7 +7,13 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>About Me</title>
-
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -15,7 +21,6 @@
       integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
       crossorigin="anonymous"
     />
-
     <!-- MY CSS -->
     <link rel="stylesheet" href="assets/styles/fade.css" />
 
@@ -75,31 +80,59 @@
           <div id="right-part">
             <div class="r-div">
               <h1 class="text-gradient jh1">Azdan az, çoktan çok gider!</h1>
-              <div>
-                <div class="rainbow mx-4 x-tin master">
-                  <div>
+              <div class="rainbow mx-4 x-tin master">
+                <div>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat odio voluptates recusandae quod fugit
+                    <span class="text-gradient-pink"><b>Java</b></span>
+                    exercitationem praesentium explicabo in culpa rerum ratione,
+                    itaque quae molestiae ex
+                    <span class="text-gradient-blue"><b>C#</b></span>
+                    expedita? Nemo
+                    <span class="text-gradient-green"><b>Vue</b></span> quaerat
+                    iste architecto?Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Fugiat odio voluptates recusandae quod
+                    fugit exercitationem praesentium
+                    <span class="text-gradient-red"><b>C++</b></span> in culpa
+                    rerum ratione, itaque quae
+                    <span class="text-gradient-purple"><b>JavaScript</b></span>
+                    molestiae ex expedita? Nemo quaerat iste architecto? quae
+                    molestiae ex expedita? Nemo quaeratolestiae ex expedita?
+                    Nemo quaerat
+                  </p>
+                </div>
+              </div>
+              <div class="exp-container">
+                <div class="exp">
+                  <h3 class="exp-title">Why shouldn't we trust atoms?</h3>
+                  <div class="exp-text">
                     <p>
-                      
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Fugiat odio voluptates recusandae quod fugit
-                      <span class="text-gradient-pink"><b>Java</b></span>
-                      exercitationem praesentium explicabo in culpa rerum
-                      ratione, itaque quae molestiae ex
-                      <span class="text-gradient-blue"><b>C#</b></span>
-                      expedita? Nemo <span class="text-gradient-green"><b>Vue</b></span> quaerat iste architecto?Lorem, ipsum dolor
-                      sit amet consectetur adipisicing elit. Fugiat odio
-                      voluptates recusandae quod fugit exercitationem
-                      praesentium
-                      <span class="text-gradient-red"><b>C++</b></span> in culpa
-                      rerum ratione, itaque quae
-                      <span class="text-gradient-purple"
-                        ><b>JavaScript</b></span
-                      >
-                      molestiae ex expedita? Nemo quaerat iste architecto? quae
-                      molestiae ex expedita? Nemo quaeratolestiae ex expedita?
-                      Nemo quaerat
+                      They make up everything Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Quibusdam hic nesciunt rem,
+                      eligendi sunt tempora fugit sit libero reprehenderit
+                      cupiditate fugiat enim, doloremque harum explicabo
+                    </p>
+                    <img src="assets/res/me/0me.png"  height="200px" alt="">
+                    <p>
+                      They make up everything Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Quibusdam hic nesciunt rem,
+                      eligendi sunt tempora fugit sit libero reprehenderit
+                      cupiditate fugiat enim, doloremque harum explicabo
                     </p>
                   </div>
+                  <button class="exp-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="exp">
+                  <h3 class="exp-title">Why shouldn't we trust atoms?</h3>
+                  <p class="exp-text">They make up everything</p>
+                  <button class="exp-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -128,6 +161,16 @@
     ></script>
     <!-- VUE JS SCRIPT -->
     <script src="assets/scripts/jelly.js"></script>
+
+    <script>
+      const toggles = document.querySelectorAll(".exp-toggle");
+
+      toggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          toggle.parentNode.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>
 

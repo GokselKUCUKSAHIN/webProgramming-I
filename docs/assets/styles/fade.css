@@ -1,5 +1,4 @@
-/* 0'dan kendi yazdığım CSS. */
-
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -86,13 +85,13 @@ a {
 }
 
 .master {
-  border-radius: 30px;
+  border-radius: 18px;
   padding: 2px;
 }
 
 .master div {
-  text-align:justify;
-  border-radius: 30px;
+  text-align: justify;
+  border-radius: 18px;
   padding: 20px;
   background-color: black;
   color: snow;
@@ -356,35 +355,53 @@ a {
 }
 
 .text-gradient-blue {
-  background:  linear-gradient(89.46deg, #2188FF 0.87%, #804EDA 75.12%);
+  background: linear-gradient(89.46deg, #2188ff 0.87%, #804eda 75.12%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-purple {
-  background: linear-gradient(87.54deg, #9867F0 -6.8%, #ED4E50 84.14%);
+  background: linear-gradient(87.54deg, #9867f0 -6.8%, #ed4e50 84.14%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-red {
-  background: linear-gradient(53.13deg, #FFD33D 0%, #FB8532 19.02%, #EA4A5A 37.19%, #8A63D2 56.92%, #2188FF 79.93%, #34D058 100%);
+  background: linear-gradient(
+    53.13deg,
+    #ffd33d 0%,
+    #fb8532 19.02%,
+    #ea4a5a 37.19%,
+    #8a63d2 56.92%,
+    #2188ff 79.93%,
+    #34d058 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-pink {
-  background: linear-gradient(92.05deg, #BCA1F7 12.09%, #E577B4 42.58%, #FF7170 84.96%);
+  background: linear-gradient(
+    92.05deg,
+    #bca1f7 12.09%,
+    #e577b4 42.58%,
+    #ff7170 84.96%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-green {
-  background: linear-gradient(92.05deg, #00f870 22.09%, #24e997 32.58%, #70ffe7 84.96%);
+  background: linear-gradient(
+    92.05deg,
+    #00f870 22.09%,
+    #24e997 32.58%,
+    #70ffe7 84.96%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -414,4 +431,130 @@ a {
   width: 100%;
   height: 100%;
   background-color: transparent;
+}
+
+/* Containers */
+.exp-container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-left: 23px;
+  margin-right: 23px;
+  margin-top: 20px;
+  font-family: "Muli", sans-serif;
+  color: white;
+}
+.exp-container h1 {
+  margin: 50px 0 30px;
+  text-align: center;
+  color: snow;
+}
+
+.exp-container h3 {
+  color: snow;
+}
+
+.exp {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.exp.active {
+  background-color: #000;
+  box-shadow: 0 3px 6px rgba(150, 150, 150, 0.2), 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exp.active::after {
+  content: "01001010";
+  font-family: "alliance", mono, sans-serif;
+  color: #2ecc71;
+  font-size: 5.2rem;
+  position: absolute;
+  opacity: 0.2;
+  bottom: -5px;
+  left: 50px;
+  z-index: 0;
+}
+
+.exp.active::before {
+  content: "01000010";
+  font-family: "alliance", mono, sans-serif;
+  color: #3498db;
+  font-size: 5.2rem;
+  position: absolute;
+  opacity: 0.23;
+  top: 10px;
+  right: 50px;
+  z-index: 0;
+}
+
+.exp-title {
+  margin: 0 35px 0 0;
+}
+
+.exp-text {
+  display: none;
+  margin: 30px 0 0;
+}
+
+.exp.active .exp-text {
+  display: block;
+}
+
+
+
+.exp-toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.exp-toggle:focus {
+  outline: 0;
+}
+
+.exp-toggle .fa-times {
+  display: none;
+}
+
+.exp.active .exp-toggle .fa-times {
+  color: #000;
+  display: block;
+}
+
+.exp.active .exp-toggle .fa-chevron-down {
+  display: none;
+}
+
+.exp.active .exp-toggle {
+  background-color: #9fa4a8;
+}
+.fa-chevron-down {
+  color: snow;
+}
+
+h1 {
+  margin: 50px 0 30px;
+  text-align: center;
+  color: snow;
+}
+h3 {
+  color: snow;
 }

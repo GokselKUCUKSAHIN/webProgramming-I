@@ -274,7 +274,7 @@ a {
   }
 }
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .img-frame {
     padding-top: 20px !important;
     height: 400px !important;
@@ -294,14 +294,14 @@ a {
     margin: 0;
   }
   .desc {
-    position: absolute;
+    /* position: absolute; */
     min-width: 450px;
     margin-top: 20px !important;
     height: 340px;
     overflow-y: hidden;
-    width: auto;
-    right: 10px;
-    left: 340px;
+    /* width: auto; */
+    /* right: 10px; */
+    /* left: 340px; */
   }
   .desc div {
     content: "";
@@ -312,7 +312,7 @@ a {
   }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   #left-part {
     position: absolute;
     top: 60px;

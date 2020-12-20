@@ -70,5 +70,33 @@ new Vue({
     myEventHandler(e) {
       this.updateScreen(e.target.innerWidth, e.target.innerHeight);
     },
+    toggleDiv(e) {
+      // console.log(e.target);
+      btn = e.target;
+      if (btn.classList != null && btn.classList[0] != "accordion") {
+        do {
+          btn = btn.parentElement;
+          // console.log("WHILE");
+        } while (btn.classList[0] != "accordion");
+      }
+      btn.classList.toggle("active");
+      var panel = btn.nextElementSibling;
+      panel.classList.toggle("hide");
+      // console.log(panel.className);
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px"; // dynamic height
+        // console.log(panel.style.maxHeight);
+        // if(panel.style.maxHeight )
+        let ratio = (panel.style.maxHeight + "").replace("px", "") / 100;
+        let animDelay = "0.5";
+        if (ratio > 1) {
+          animDelay = 0.5 + (ratio - 1) * 0.112;
+        }
+        panel.style.transition = `max-height ${animDelay}s ease`;
+        // console.log(animDelay);
+      }
+    },
   },
 });

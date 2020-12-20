@@ -116,6 +116,7 @@ a {
 }
 
 .fadeBox {
+  color: snow;
   z-index: 0;
   background: linear-gradient(
     280.16deg,
@@ -148,15 +149,15 @@ a {
 }
 
 .fadeBox::before {
-  border-radius: 2px;
+  border-radius: 4px;
   z-index: -1;
   content: "";
   display: block;
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
+  top: 3px;
+  left: 3px;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
   background: #000;
 }
 
@@ -166,12 +167,15 @@ a {
 }
 
 .text-cont {
-  color: #fff;
+  height: 60px;
+  color: snow;
+  font-weight: bold;
   margin: 0 auto;
   font-size: 20px;
-  line-height: 2.6rem !important;
+  line-height: 60px !important;
   padding: 0;
-  text-align: center;
+  padding-left: 20px;
+  text-align: left;
 }
 
 .text-cont::selection {
@@ -433,126 +437,47 @@ a {
   background-color: transparent;
 }
 
-/* Containers */
-.exp-container {
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  margin-left: 23px;
-  margin-right: 23px;
-  margin-top: 20px;
-  font-family: "Muli", sans-serif;
-  color: white;
-}
-.exp-container h1 {
-  margin: 50px 0 30px;
-  text-align: center;
-  color: snow;
-}
 
-.exp-container h3 {
-  color: snow;
-}
-
-.exp {
-  background-color: transparent;
-  border: 1px solid #9fa4a8;
-  border-radius: 10px;
-  margin: 20px 0;
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  transition: 0.3s ease;
-}
-
-.exp.active {
-  background-color: #000;
-  box-shadow: 0 3px 6px rgba(150, 150, 150, 0.2), 0px 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.exp.active::after {
-  content: "01001010";
-  font-family: "alliance", mono, sans-serif;
-  color: #2ecc71;
-  font-size: 5.2rem;
-  position: absolute;
-  opacity: 0.2;
-  bottom: -5px;
-  left: 50px;
-  z-index: 0;
-}
-
-.exp.active::before {
-  content: "01000010";
-  font-family: "alliance", mono, sans-serif;
-  color: #3498db;
-  font-size: 5.2rem;
-  position: absolute;
-  opacity: 0.23;
-  top: 10px;
-  right: 50px;
-  z-index: 0;
-}
-
-.exp-title {
-  margin: 0 35px 0 0;
-}
-
-.exp-text {
-  display: none;
-  margin: 30px 0 0;
-}
-
-.exp.active .exp-text {
-  display: block;
-}
-
-.exp-toggle {
-  background-color: transparent;
-  border: 0;
-  border-radius: 50%;
+/*Containers*/
+.accordion {
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  padding: 0;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  height: 30px;
-  width: 30px;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s ease;
+}
+.accordion.active {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
-.exp-toggle:focus {
-  outline: 0;
-}
-
-.exp-toggle .fa-times {
-  display: none;
-}
-
-.exp.active .exp-toggle .fa-times {
-  color: #000;
-  display: block;
-}
-
-.exp.active .exp-toggle .fa-chevron-down {
-  display: none;
-}
-
-.exp.active .exp-toggle {
-  background-color: #9fa4a8;
-}
-.fa-chevron-down {
+.panel {
+  
   color: snow;
+  padding: 0px 18px;
+  margin-bottom: 25px;
+  background-color: rgba(200, 200, 200, 0.041);
+  max-height: 0;
+  overflow: hidden;
+  border: 2px solid snow;
+  border-top: none;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  transition: max-height 0.5s ease-out;
+  transition: all 0.5s ease-out;
+
+}
+.panel div {
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-h1 {
-  margin: 50px 0 30px;
-  text-align: center;
-  color: snow;
-}
-h3 {
-  color: snow;
+.panel.hide {
+  border: none;
 }

@@ -469,7 +469,6 @@ a {
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
   transition: max-height 0.5s ease-out;
-  transition: all 0.5s ease-out;
 
 }
 .panel div {
@@ -479,5 +478,18 @@ a {
 }
 
 .panel.hide {
-  border: none;
+  border: solid 1px transparent;
+  animation: swapborder 0.75s ease 1;
+  /* border: 1px solid black; */
+}
+
+@keyframes swapborder {
+  0% {
+    border-top: none;
+    border-color: snow;
+  }
+  100% {
+    border-top: none;
+    border-color: transparent;
+  }
 }

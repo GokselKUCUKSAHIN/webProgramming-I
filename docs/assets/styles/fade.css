@@ -478,7 +478,7 @@ a {
 }
 
 .panel.hide {
-  border: solid 1px transparent;
+  border: solid 2px transparent;
   animation: swapborder 0.75s ease 1;
   /* border: 1px solid black; */
 }

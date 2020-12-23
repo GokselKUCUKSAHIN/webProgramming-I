@@ -549,15 +549,17 @@ a {
 .img-col {
   float: left !important;
   /* padding: 1% !important; */
-  max-width: 500px !important;
 }
 
 .ic2 {
   width: 50% !important;
+  max-width: 500px !important;
 }
 .ic3 {
   width: 33.33% !important;
+  max-width: 320px !important;
 }
 .ic4 {
   width: 25% !important;
+  max-width: 250px !important;
 }

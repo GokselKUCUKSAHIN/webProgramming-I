@@ -94,8 +94,11 @@ new Vue({
         if (ratio > 1 && ratio <= 5) {
           animDelay = 0.5 + (ratio - 1) * 0.112;
         }
-        else if (ratio > 5){
+        else if (ratio > 5 && ratio <= 10){
           animDelay = 0.5 + (ratio - 1) * 0.05;
+        }
+        else if (ratio > 10){
+          animDelay = 0.5 + (ratio - 1) * 0.025;
         }
         panel.style.transition = `max-height ${animDelay}s ease`;
         // console.log(animDelay);

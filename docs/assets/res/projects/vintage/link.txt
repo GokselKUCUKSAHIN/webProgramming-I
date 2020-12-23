@@ -1,0 +1,2 @@
+vid: https://www.youtube.com/watch?v=ANXm1cnFxQI
+git: https://github.com/GokselKUCUKSAHIN/JavaFx-Vintage-Computer-Graphic-Art

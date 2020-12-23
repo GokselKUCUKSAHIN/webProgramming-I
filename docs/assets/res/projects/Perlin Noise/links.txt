@@ -1,0 +1,5 @@
+v1: https://www.youtube.com/watch?v=T3DZfZqxhU8
+git1: https://github.com/GokselKUCUKSAHIN/JavaFx-Perlin-Noise-Painting
+
+v2: https://www.youtube.com/watch?v=z9E3oFfBMdU
+git2: https://github.com/GokselKUCUKSAHIN/Simple-3D-Perlin-Noise-on-2D-Matrix-Visualized

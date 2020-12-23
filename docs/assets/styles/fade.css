@@ -399,6 +399,19 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+.text-gradient-yellow {
+  background: linear-gradient(
+    92.05deg,
+    #d1eb88 25.09%,
+    #ddb95e 42.58%,
+    #faa038 84.96%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 .text-gradient-green {
   background: linear-gradient(
     92.05deg,

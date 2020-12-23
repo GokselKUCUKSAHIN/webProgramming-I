@@ -510,18 +510,24 @@ a {
   margin-bottom: 10px;
   /* max-height: 400px; */
 }
+.f-max2 {
+  max-width: 800px !important;
+}
+.f-max3 {
+  max-width: 600px !important;
+}
 .jt {
   text-align: justify;
+  font-size: 18px !important;
   /* max-width: 1000px; */
 }
 .tw {
   /* margin: 0 auto; */
   /* max-width: px !important; */
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 31px;
+  padding-right: 31px;
   margin-left: 5% !important;
   margin-right: 5% !important;
-  font-size: 17px !important;
 }
 .img-row {
   margin-top: 10px;
@@ -543,7 +549,7 @@ a {
 .img-col {
   float: left !important;
   /* padding: 1% !important; */
-  max-width: 450px !important;
+  max-width: 500px !important;
 }
 
 .ic2 {

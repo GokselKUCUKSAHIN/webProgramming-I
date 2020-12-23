@@ -266,20 +266,62 @@
                     <img
                       class="fit-img f-max2"
                       src="assets/res/projects/dither/dither.png"
-                      alt="penguin_gif"
+                      alt="dither"
                     />
                     <img
                       class="fit-img f-max2"
                       src="assets/res/projects/dither/zoom1.png"
-                      alt="penguin_gif"
+                      alt="dither zoom1"
                     />
                     <img
                       class="fit-img f-max2"
                       src="assets/res/projects/dither/zoom2.png"
-                      alt="penguin_gif"
+                      alt="dither zoom2"
                     />
                   </div>
                 </div>
+                <!-- 4 -->
+                <div class="accordion fadeBox" @click="toggleDiv">
+                  <div class="text-cont">
+                    Conway's Game of Life
+                    <span class="text-gradient-purple f-right">Java</span>
+                  </div>
+                </div>
+                <div class="panel hide">
+                  <div>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering"
+                    >
+                      <img
+                        class="fit-img"
+                        src="assets/res/projects/automata/automata.png"
+                        alt="automata"
+                      />
+                    </a>
+                    <div class="tw">
+                      <p class="jt">
+                        Game of Life, 1970'te İngiliz matematikçi Horton Conway
+                        tarafından geliştirilmiş bir Cellular Automata'dır.
+                        Hücresel otomatanın en iyi bilinen örneğidir.
+                      </p>
+                      <p class="jt">
+                        Kurallar:
+                        <ul style="text-align: left; font-size: 16px;">
+                          <li>Bir canlı hücrenin, iki'den daha az canlı komşusu varsa "yalnızlık nedeniyle" ölür</li>
+                          <li>Bir canlı hücrenin, üç'ten daha fazla canlı komşusu varsa "kalabalıklaşma nedeniyle" ölür</li>
+                          <li>Bir canlı hücrenin, iki ya da üç canlı komşusu varsa değişmeden bir sonraki nesile kalır</li>
+                          <li>Bir ölü hücrenin tam olarak üç canlı komşusu varsa canlanır.</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <img
+                      class="fit-img"
+                      src="assets/res/projects/automata/gameoflife.gif"
+                      alt="automata_gif"
+                    />
+                  </div>
+                </div>
+                <!-- END -->
               </div>
             </div>
           </div>

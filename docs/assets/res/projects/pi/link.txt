@@ -1,0 +1,3 @@
+pattern: https://github.com/GokselKUCUKSAHIN/Number_Pi_Pattern
+walker: https://github.com/GokselKUCUKSAHIN/Number-PI-Walker
+calculate: https://github.com/GokselKUCUKSAHIN/Calculating-PI-Using-Random-Numbers

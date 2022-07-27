@@ -14,7 +14,7 @@ new Vue({
      tablo yapmak🎨 ve video oyunları🕹. Ayrıca sıkı Star Wars🌑 ve IronMaiden \
      hayranıyımdır🤘. ",
     egg: "ve JOJO!",
-    link: "https://youtu.be/2MtOpB5LlUA?t=72",
+    link: "https://youtu.be/EP62gl-sj2I?t=72",
     screensize: {
       w: 0,
       h: 0,

@@ -3,7 +3,7 @@ import {EventBus} from "../utils/EventBus";
 import {Discount} from "../interfaces/Discount";
 import {ShoppingCartItem} from "../interfaces/ShoppingCartItem";
 import CheckOut from "./CheckOut";
-import Cart from "./Cart";
+import ItemContainer from "./ItemContainer";
 
 export const eventBus = EventBus.create("Cart");
 
@@ -62,7 +62,7 @@ export function Pricing() {
 
     return (
         <div className="container">
-            <Cart/>
+            <ItemContainer/>
             <CheckOut shoppingCart={shoppingCart}/>
         </div>
     )
